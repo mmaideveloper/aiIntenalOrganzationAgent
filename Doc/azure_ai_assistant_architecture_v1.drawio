@@ -1,0 +1,235 @@
+<mxfile host="Electron" agent="GPT-5.5 Pro" pages="2">
+  <diagram id="simplified-azure-ai-assistant" name="Simplified Overview">
+    <mxGraphModel dx="1571" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=#1F2937;" value="Azure Internal AI Assistant - Infrastucture (v1)" vertex="1">
+          <mxGeometry height="35" width="1500" x="40" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="v4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#9CA3AF;strokeWidth=1.3;fontStyle=1;fontSize=12;fontColor=#374151;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;dashed=1;dashPattern=6 4;" value="&lt;b&gt;Identity &amp; Access&lt;/b&gt;" vertex="1">
+          <mxGeometry height="95" width="690" x="40" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="v5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#F8FBFF;strokeColor=#8CB9E6;strokeWidth=1.5;fontStyle=1;fontSize=13;fontColor=#005A9E;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;dashed=1;dashPattern=6 4;" value="&lt;b&gt;Runtime Request Path&lt;/b&gt;" vertex="1">
+          <mxGeometry height="260" width="1690" x="40" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="v6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#9CA3AF;strokeWidth=1.3;fontStyle=1;fontSize=12;fontColor=#374151;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;dashed=1;dashPattern=6 4;" value="&lt;b&gt;Knowledge Ingestion Path&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="1025" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="v7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#9CA3AF;strokeWidth=1.3;fontStyle=1;fontSize=12;fontColor=#374151;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;dashed=1;dashPattern=6 4;" value="&lt;b&gt;RAG Storage&lt;/b&gt;" vertex="1">
+          <mxGeometry height="230" width="490" x="1085" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="v8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#FFFFFF;strokeColor=#9CA3AF;strokeWidth=1.3;fontStyle=1;fontSize=12;fontColor=#374151;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;dashed=1;dashPattern=6 4;" value="&lt;b&gt;Cross-cutting controls&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="1535" x="40" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="v9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#F3E8FF;strokeColor=#7E22CE;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;My Access Portal&lt;/b&gt;&lt;br/&gt;Access Packages&lt;br/&gt;self-service role request" vertex="1">
+          <mxGeometry height="55" width="210" x="70" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="v10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#F3E8FF;strokeColor=#7E22CE;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Microsoft Entra ID&lt;/b&gt;&lt;br/&gt;SSO / MFA / app roles / group claims" vertex="1">
+          <mxGeometry height="55" width="220" x="426" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="v11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#6B7280;strokeWidth=1.4;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;User&lt;/b&gt;&lt;br/&gt;Employee / analyst" vertex="1">
+          <mxGeometry height="70" width="135" x="70" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="v12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Chat UI&lt;/b&gt;&lt;br/&gt;My Apps / browser" vertex="1">
+          <mxGeometry height="70" width="145" x="245" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="v13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br/&gt;Azure API Management&lt;br/&gt;rate limit + auth checks" vertex="1">
+          <mxGeometry height="90" width="170" x="430" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Backend Orchestrator&lt;/b&gt;&lt;br/&gt;Container Apps / AKS&lt;br/&gt;request correlation" vertex="1">
+          <mxGeometry height="90" width="180" x="640" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Authorization + Policy&lt;/b&gt;&lt;br/&gt;claims → ACL filter&lt;br/&gt;tool allow-list" vertex="1">
+          <mxGeometry height="90" width="180" x="860" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Context / RAG Builder&lt;/b&gt;&lt;br/&gt;prompt template&lt;br/&gt;retrieved chunks + citations" vertex="1">
+          <mxGeometry height="90" width="190" x="1080" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DCFCE7;strokeColor=#16A34A;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Azure OpenAI&lt;/b&gt;&lt;br/&gt;chat model&lt;br/&gt;embedding model" vertex="1">
+          <mxGeometry height="90" width="160" x="1310" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEE2E2;strokeColor=#DC2626;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Verified Answer&lt;/b&gt;&lt;br/&gt;source citations&lt;br/&gt;human approval if risky" vertex="1">
+          <mxGeometry height="90" width="150" x="1500" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="v19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#6B7280;strokeWidth=1.4;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Internal Documents&lt;/b&gt;&lt;br/&gt;SharePoint, Confluence,&lt;br/&gt;Jira, file shares, APIs" vertex="1">
+          <mxGeometry height="85" width="190" x="70" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="v20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Document Processor&amp;nbsp;&lt;/b&gt;&lt;div&gt;Azure Functions / Container Job&lt;br&gt;scheduled or event-based&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="205" x="310" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="v21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Parse + Chunk + ACL&lt;/b&gt;&lt;br/&gt;OCR/layout, chunking,&lt;br/&gt;acl_group_ids, labels" vertex="1">
+          <mxGeometry height="85" width="215" x="565" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="v22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DCFCE7;strokeColor=#16A34A;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Embed + Upsert&lt;/b&gt;&lt;br/&gt;vectors + metadata&lt;br/&gt;write to search stores" vertex="1">
+          <mxGeometry height="85" width="185" x="830" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="v23" parent="1" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ECFEFF;strokeColor=#0891B2;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Azure AI Search&lt;/b&gt;&lt;br/&gt;hybrid search index&lt;br/&gt;semantic ranking&lt;br/&gt;ACL pre-filter fields" vertex="1">
+          <mxGeometry height="110" width="215" x="1115" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="v24" parent="1" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#F0FDF4;strokeColor=#15803D;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;PostgreSQL + pgvector&lt;/b&gt;&lt;br/&gt;embedding store&lt;br/&gt;chunk metadata&lt;br/&gt;feedback / semantic cache" vertex="1">
+          <mxGeometry height="110" width="215" x="1350" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="v25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEE2E2;strokeColor=#DC2626;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Key Vault + Managed Identity&lt;/b&gt;&lt;br/&gt;secrets, keys, certificates" vertex="1">
+          <mxGeometry height="55" width="250" x="70" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="v26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#F5F3FF;strokeColor=#6D28D9;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Azure Monitor / App Insights&lt;/b&gt;&lt;br/&gt;latency, traces, failures" vertex="1">
+          <mxGeometry height="55" width="250" x="360" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="v27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#F5F3FF;strokeColor=#6D28D9;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Audit + Log Analytics / SIEM&lt;/b&gt;&lt;br/&gt;user, query, auth decision, retrieved document IDs" vertex="1">
+          <mxGeometry height="55" width="310" x="650" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="v29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" value="&lt;b&gt;Private Networking&lt;/b&gt;&lt;br/&gt;VNet integration + Private Endpoints for data and AI services" vertex="1">
+          <mxGeometry height="55" width="230" x="1000" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="v9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7E22CE;strokeWidth=1.4;fontSize=10;fontColor=#7E22CE;endArrow=block;endFill=1;dashed=1;dashPattern=4 4;" target="v10" value="approved roles">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="v10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7E22CE;strokeWidth=1.4;fontSize=10;fontColor=#7E22CE;endArrow=block;endFill=1;dashed=1;dashPattern=4 4;" target="v15" value="claims">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="160" />
+              <mxPoint x="950" y="160" />
+              <mxPoint x="950" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="v11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;strokeWidth=1.8;fontSize=11;fontColor=#2563EB;endArrow=block;endFill=1;" target="v12" value="ask">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="v12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;strokeWidth=1.8;fontSize=11;fontColor=#2563EB;endArrow=block;endFill=1;" target="v13" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="v13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;strokeWidth=1.8;fontSize=11;fontColor=#2563EB;endArrow=block;endFill=1;" target="v14" value="API call">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="v14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;strokeWidth=1.8;fontSize=11;fontColor=#2563EB;endArrow=block;endFill=1;" target="v15" value="request + token">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="v15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" target="v16" value="allowed scope">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="v16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" target="v23" value="ACL-filtered hybrid retrieval">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="455" />
+              <mxPoint x="1175" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e39" edge="1" parent="1" source="v16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" target="v24" value="pgvector lookup / metadata">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1175" y="455" />
+              <mxPoint x="1455" y="455" />
+              <mxPoint x="1455" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="v16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" target="v17" value="grounded prompt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="v17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" target="v18" value="draft + verify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" edge="1" parent="1" source="v19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D97706;strokeWidth=1.6;fontSize=11;fontColor=#92400E;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" target="v20" value="source sync">
+          <mxGeometry relative="1" x="0.2" y="-57" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e43" edge="1" parent="1" source="v20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D97706;strokeWidth=1.6;fontSize=11;fontColor=#92400E;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" target="v21" value="content">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="413" y="580" />
+              <mxPoint x="673" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e44" edge="1" parent="1" source="v21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D97706;strokeWidth=1.6;fontSize=11;fontColor=#92400E;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" target="v22" value="chunks + ACL">
+          <mxGeometry relative="1" x="-0.2" y="53" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e45" edge="1" parent="1" source="v22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D97706;strokeWidth=1.6;fontSize=11;fontColor=#92400E;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" target="v23" value="index docs + vectors">
+          <mxGeometry relative="1" x="-1" y="63" as="geometry">
+            <mxPoint x="-5" y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="1000" y="640" />
+              <mxPoint x="1115" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e46" edge="1" parent="1" source="v22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D97706;strokeWidth=1.6;fontSize=11;fontColor=#92400E;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" value="store embeddings">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="963" y="685" />
+              <mxPoint x="963" y="711" />
+              <mxPoint x="1313" y="711" />
+            </Array>
+            <mxPoint x="977.5" y="698.89" as="sourcePoint" />
+            <mxPoint x="1312.5" y="698.89" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rag-acl-detail" name="RAG + ACL Detail">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v47" value="RAG + ACL Detail — simplified logic" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="40" y="25" width="1350" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="v48" value="Goal: the LLM receives only authorized context. ACL filtering happens before retrieval, not after the model answers." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=12;fontColor=#4B5563;" vertex="1" parent="1">
+          <mxGeometry x="40" y="62" width="1350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v49" value="&lt;b&gt;1. User claims&lt;/b&gt;&lt;br/&gt;user id, app roles,&lt;br/&gt;group ids from Entra" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#F3E8FF;strokeColor=#7E22CE;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="60" y="150" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v50" value="&lt;b&gt;2. Build ACL filter&lt;/b&gt;&lt;br/&gt;acl_group_ids / acl_user_ids&lt;br/&gt;classification / sensitivity" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEF3C7;strokeColor=#D97706;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="310" y="150" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v51" value="&lt;b&gt;3. Permission-aware query&lt;/b&gt;&lt;br/&gt;pre-filter first&lt;br/&gt;then vector / hybrid search" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="600" y="150" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v52" value="&lt;b&gt;4. Search stores&lt;/b&gt;&lt;br/&gt;Azure AI Search +&lt;br/&gt;PostgreSQL / pgvector" style="shape=cylinder3d;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ECFEFF;strokeColor=#0891B2;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="890" y="150" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v53" value="&lt;b&gt;5. Build model context&lt;/b&gt;&lt;br/&gt;allowed chunks only&lt;br/&gt;with source metadata" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#DBEAFE;strokeColor=#2563EB;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="150" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="v54" value="&lt;b&gt;6. LLM + verifier&lt;/b&gt;&lt;br/&gt;answer grounded in sources&lt;br/&gt;block unsupported claims" style="rounded=1;whiteSpace=wrap;html=1;arcSize=12;fillColor=#FEE2E2;strokeColor=#DC2626;strokeWidth=1.3;fontSize=12;fontColor=#111827;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="330" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="e55" value="claims" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563EB;strokeWidth=1.8;fontSize=11;fontColor=#2563EB;endArrow=block;endFill=1;" edge="1" parent="1" source="v49" target="v50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" value="OData / SQL filter" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" edge="1" parent="1" source="v50" target="v51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e57" value="filtered retrieval" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" edge="1" parent="1" source="v51" target="v52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e58" value="authorized chunks" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" edge="1" parent="1" source="v52" target="v53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e59" value="prompt context" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16A34A;strokeWidth=1.8;fontSize=11;fontColor=#15803D;endArrow=block;endFill=1;" edge="1" parent="1" source="v53" target="v54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v60" value="&lt;b&gt;Azure AI Search fields&lt;/b&gt;&lt;br/&gt;content, content_vector, document_id, chunk_id&lt;br/&gt;acl_group_ids: filterable only&lt;br/&gt;acl_user_ids: filterable only&lt;br/&gt;source_system, owner, sensitivity_label&lt;br/&gt;retrievable content: only what user can access" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFFDE7;strokeColor=#B45309;fontSize=11;fontColor=#111827;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="v61" value="&lt;b&gt;PostgreSQL / pgvector tables&lt;/b&gt;&lt;br/&gt;chunks(document_id, chunk_id, text_hash, metadata)&lt;br/&gt;embeddings(chunk_id, vector, model, version)&lt;br/&gt;feedback(user_id, answer_id, rating)&lt;br/&gt;audit_references(query_id, document_id, chunk_id)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFFDE7;strokeColor=#B45309;fontSize=11;fontColor=#111827;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="440" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="v62" value="&lt;b&gt;Design rule&lt;/b&gt;&lt;br/&gt;Access Packages decide who can use AI assistant functions.&lt;br/&gt;ACL metadata decides which document chunks the user can retrieve.&lt;br/&gt;The backend enforces both before calling the model." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFFDE7;strokeColor=#B45309;fontSize=11;fontColor=#111827;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="590" width="930" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="v63" value="&lt;b&gt;Production caution&lt;/b&gt;&lt;br/&gt;Do not use a generic privileged service identity without user-context filtering. Do not send ACL metadata or denied document content to the LLM prompt." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFFDE7;strokeColor=#B45309;fontSize=11;fontColor=#111827;align=left;verticalAlign=top;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="540" width="350" height="155" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

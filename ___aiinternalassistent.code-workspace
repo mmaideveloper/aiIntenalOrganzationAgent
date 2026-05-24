@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"chat.tools.terminal.autoApprove": {
+			"/^Set-Location 'c:\\\\Projects\\\\___aiinternalassistent\\\\aiIntenalOrganzationAgent'; python -c \"import importlib\\.util,sys;print\\('ok' if importlib\\.util\\.find_spec\\('pypdf'\\) else 'missing'\\)\"$/": {
+				"approve": true,
+				"matchCommandLine": true
+			}
+		}
+	}
+}
